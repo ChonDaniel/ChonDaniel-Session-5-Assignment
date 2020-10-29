@@ -1,0 +1,20 @@
+function main()
+    output "Would you like widget A or widget B?"
+    input type.lower()
+
+//Turn input type into lowercase
+
+    output "How many widgets would you like?"
+    input number
+
+    if type = "a" then
+        output "You have chosen widget A! " + "The price per widget is $10.00."
+        total = 10 * number
+        output "Your total is: $" + total
+
+    else
+        output "You have chosen widget B! " + "The price per widget is $20.00."
+        total = 20 * number
+        output "Your total is: $" + total
+    end If
+end 

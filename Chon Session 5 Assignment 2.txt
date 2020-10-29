@@ -1,0 +1,13 @@
+type = input("Would you like widget A or widget B? ").lower()
+
+number = int(input("How many widgets would you like? "))
+
+if type == "a":
+    print("You have chosen widget A! " + "The price per widget is $10.00.")
+    total = 10 * number
+    print("Your total is: $" + str(total))
+    
+else:
+    print("You have chosen widget B! " + "The price per widget is $20.00.")
+    total = 20 * number
+    print("Your total is: $" + str(total))

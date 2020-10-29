@@ -1,0 +1,18 @@
+item = int(input("How many items were ordered? "))
+
+price = int(input("What is the unit price? "))
+
+cost = item * price
+
+total = cost + cost * 0.07
+
+if total >= 100:
+    shipping = 0
+
+else:
+    shipping = total * 0.1
+total = shipping + total
+print("Number of items: " + str(item))
+print("Unit price: $" + str(price))
+print("Shipping charge: $" + str(shipping))
+print("Total cost: $" + str(round(total,2)))

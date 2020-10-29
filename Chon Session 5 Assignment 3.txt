@@ -1,0 +1,18 @@
+name = input("What your last name? ")
+
+hours = int(input("How many hours do they work for? "))
+
+rate = int(input("What is your rate per hour? "))
+
+if hours >= 40:
+    overtime = hours - 40
+    overpay = overtime * 1.5 * rate
+    total = 40 * rate + overpay
+    
+else:
+    total = rate * hours
+    
+print("Last name: " + name)
+print("Hours: " + str(hours))
+print("Rate: $" + str(rate))
+print("Gross pay: $" + str(round(total,2)))
